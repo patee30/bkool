@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(String),[MethodDecl(Id(len),Static,[],IntType,Block([],[])),MethodDecl(Id(split),Static,[param(Id(delimiter),StringType)],ArrayType(100,StringType),Block([],[])),MethodDecl(Id(strip),Static,[],ClassType(Id(something)),Block([],[]))])])

@@ -1,0 +1,9 @@
+
+            class MixedVar {
+                float getVal() {
+                    int num1 = 99, num2;
+                    final float char1 = 08e-8, char2 = True;
+                    string char3 = False, num3 = x;
+                }
+            }
+        

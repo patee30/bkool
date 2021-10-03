@@ -1,0 +1,7 @@
+
+            class DrawLayer {
+                Point a = new Point(3, 5), b = new Point(1, 43.7), c = new Point(999, 01);
+                Triangle trg = new Triangle(a, b, c);
+                Paint paint = new Paint();
+            }
+        

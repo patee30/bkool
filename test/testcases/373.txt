@@ -1,0 +1,10 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    var a, b, c = this;
+                    a := 1;
+                    b := nil % 1212 ^ !+"this is a string" / -a.b.d() * true \ 53.e+80 ^ "9";
+                }
+            }
+        

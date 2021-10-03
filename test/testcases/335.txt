@@ -1,0 +1,7 @@
+
+            class ConstString {
+                string get() {
+                    final string val = 2021;
+                }
+            }
+        

@@ -1,0 +1,26 @@
+
+            class Mixed {
+                bool method2() {
+                    bool a, b;
+                    int c, d, e = 100e0;
+                    {
+                        {
+                            strin[10] a, b, c, d;
+                            {
+                                (this.a.b()[9]).c();
+                            }
+                        }
+                        {
+                            int[10] a, b = g.h[10];
+                            float c = 070029.e-543;
+                            non_local d;
+                            {
+                                local e = {nil, false};
+                            }
+                            return (this.a).b.c;
+                        }
+                    }
+                    return something[20] * !-+"haha";
+                }
+            }
+        

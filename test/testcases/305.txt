@@ -1,0 +1,8 @@
+
+            class Sort {
+            }
+            class QuickSort extends Sort {
+            }
+            class MergeSort extends Sort {
+            }
+        

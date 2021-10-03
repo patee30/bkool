@@ -1,0 +1,6 @@
+
+            class Triangle {
+                bool isScalene = false, isIsosceles;
+                bool isEquilateral;
+            }
+        

@@ -1,0 +1,7 @@
+
+            class Rel {
+                int call(bool f) {
+                    for t := 1 to 100 do return 2 == 1;
+                }
+            }
+        

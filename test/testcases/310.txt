@@ -1,0 +1,6 @@
+
+            class Matrix {
+                int[1234] m1, m2;
+                float[567][890][123][40] random = {true, 6, 2.e4};
+            }
+        

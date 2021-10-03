@@ -1,0 +1,6 @@
+
+            class a {
+                void [9] b(float c, d; int e) {}
+                Class f(Class g, h, i) {}
+            }
+        

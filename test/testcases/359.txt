@@ -1,0 +1,10 @@
+
+            class Index {
+                type hehe = a.b.c()[1], hehe2 = d.e.f[2];
+                int call() {
+                    final Class obj = new Class((a.b.c).thia.null[10], nil[false[1]]), obj2 = a[b[c[d[e[f[g.h("j"[1])]]]]]];
+                    a.b[2] := a.b()[3];
+                    a[3[1] ^ a.b(2)] := a[b[99 % 8e5]] +3;
+                }
+            }
+        

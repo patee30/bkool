@@ -1,0 +1,7 @@
+
+            class AttrDeclAdvanced {
+                final static string[400] name, address;
+                void[400][400] comment;
+                static final Class[400] obj = new Class();
+            }
+        

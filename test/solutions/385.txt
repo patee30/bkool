@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[MethodDecl(Id(call),Instance,[],IntType,Block([VarDecl(Id(hehe),ClassType(Id(var)))],[Continue,If(Id(a),Block([],[Continue,For(Id(b),Id(c),Id(d),False,If(Id(e),Continue)])])),Continue]))])])

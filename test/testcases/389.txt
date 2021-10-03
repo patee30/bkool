@@ -1,0 +1,11 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    (8 == new G("str{}", true)).b(param1, "param2" && 9);
+                    hello.my().world();
+                    new hehe().value();
+                    (555.9 + 5 - t == Fatal[1]).u(!0 + +9 * false);
+                }
+            }
+        

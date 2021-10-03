@@ -1,0 +1,8 @@
+
+            class Arithm {
+                int call() {
+                    chaos[9999] sth = ++++--"1", sth2 = --++++---hehe;
+                    float sth3 = ---+(-+-+g.h().ij[12])[34];
+                }
+            }
+        

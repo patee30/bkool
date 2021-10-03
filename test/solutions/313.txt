@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(VoidType),[AttributeDecl(Instance,VarDecl(Id(x),VoidType,IntLit(1))),AttributeDecl(Instance,VarDecl(Id(y),ArrayType(4,VoidType),[StringLit("sth")]))])])

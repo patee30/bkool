@@ -1,0 +1,15 @@
+
+            class Mixed {
+                string temp;
+                static inittt() {
+                    local [90] a, b, temp1 = 0.0, temp2;
+                    string temp3;
+                    if a != +-(!"$^!@" % new G().method () + true^(false)) then {
+                        break;
+                    }
+                    else for Int := ((!-new B().haha[0] >= 2 % false ^ 6 ^ "\":"[6] * 8.e+0[9]) < (!--+{0.23, 3e3})) to (a + (new b()[1] ^ (5 || 7) && !(1 == 6))["8" % false]) do
+                        return ((yeh.yoh()[1])[1 + "string"]).i[1];
+                    continue;
+                }
+            }
+        

@@ -1,0 +1,9 @@
+
+            class Bool {
+                final bool a = !True, b = !false;
+                int call() {
+                    int c = !!1, d = !!!"string";
+                    float e = !!!(!!!!(!false)), f = !!a.b().c();
+                }
+            }
+        

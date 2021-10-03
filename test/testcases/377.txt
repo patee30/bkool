@@ -1,0 +1,9 @@
+
+            class Mixed {
+                int main () {
+                    c := (a.b().c[2])[3] + new classA(new clB(param, {"list"}));
+                    obj3.const_attr := x[a[b[c[d]]]] + g.h.i();
+                    (e.f() + 9).a.b[x[0] + (x[1]).y()] := value + {{1}};
+                }
+            }
+        

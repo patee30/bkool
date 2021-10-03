@@ -1,0 +1,9 @@
+
+            class Mixed {
+                string temp;
+                int call() {
+                    final hanh a = 1;
+                }
+            }
+            
+        

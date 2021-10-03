@@ -1,0 +1,6 @@
+
+            class Module {
+                Void nothing() {}
+                int main (int argc; char[100] argv) {}
+            }
+        

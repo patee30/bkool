@@ -1,0 +1,9 @@
+
+            class Stmt {
+                int main() {
+                    s:=r*r*this.myPI;
+                    a[0]:= s;
+                    return null ^ nil;
+                }
+            }
+        

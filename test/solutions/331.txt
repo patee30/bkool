@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Sticker),[MethodDecl(Id(writeNote),Static,[param(Id(list),ArrayType(100,StringType))],ClassType(Id(Note)),Block([],[])),MethodDecl(Id(deleteNote),Instance,[param(Id(idx),IntType)],ClassType(Id(bool)),Block([],[]))])])

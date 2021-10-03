@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Bool),[MethodDecl(Id(call),Instance,[],IntType,Block([ConstDecl(Id(a),ClassType(Id(def)),BinaryOp(&&,BinaryOp(||,BinaryOp(||,FloatLit(0.0),[StringLit("a")]),BooleanLit(False)),StringLit("something")))],[]))])])

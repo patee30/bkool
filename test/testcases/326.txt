@@ -1,0 +1,6 @@
+
+            class Job {
+                init() {}
+                static init(int param1, param2) {}
+            }
+        

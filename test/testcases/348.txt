@@ -1,0 +1,9 @@
+
+            class Arith {
+                int call() {
+                    float res = 7242 + 1283 + 8123 + 31273 - 6239;
+                    string res2 = 6e88 + "sad" - this - 18 - false;
+                    nit res = 3 - 5e-12 - 1733 + "hehe" - 12;
+                }
+            }
+        

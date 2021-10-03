@@ -1,0 +1,14 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    if fatal then
+                        return ((!(54.9 * new C(00)) <= -(2)[10])[9]).value;
+                    else
+                        for i := 10 downto 100 do
+                            return io.exit(1);
+                    return a.b(0).d.f();
+                    return end[00];
+                }
+            }
+        

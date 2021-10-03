@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(TestServer),[AttributeDecl(Static,VarDecl(Id(uri),StringType)),MethodDecl(Id(getRequest),Instance,[param(Id(payload),StringType)],ClassType(Id(bool)),Block([VarDecl(Id(method),StringType,StringLit("GET")),VarDecl(Id(content_length),StringType,CallExpr(Id(String),Id(len),[Id(payload)])),VarDecl(Id(response),StringType)],[]))])])

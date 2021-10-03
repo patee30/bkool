@@ -1,0 +1,8 @@
+
+            class Y extends X {
+                A a = new B();
+                int call() {
+                    x x = new A(), x2 = new B(new C(1, 2), new D(true, {1, 2, {{3}}}, nil), this, hehe);
+                }
+            }
+        

@@ -1,0 +1,9 @@
+
+            class MethodInvoc {
+                string temp = a.b.c.d(), temp2 = e.f.g(1,{3} + 9,"3");
+                int call() {
+                    final type[3000] temp3 = new type(this, (k.l(h.i(a[2 ^ a.b[x % y % "z"]], bleh), k+1+!false, l.m(n, {"o"}))));
+                    int b = 19.1.b.c.d(), c = new D().e();
+                }
+            }
+        

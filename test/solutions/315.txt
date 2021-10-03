@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ConstNumber),[AttributeDecl(Static,VarDecl(Id(num),FloatType,FloatLit(0.0))),AttributeDecl(Static,VarDecl(Id(num2),FloatType)),AttributeDecl(Static,VarDecl(Id(num3),FloatType))])])

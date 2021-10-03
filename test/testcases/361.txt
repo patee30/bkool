@@ -1,0 +1,9 @@
+
+            class AttrAccess {
+                string attr = g.h, attr2 = a.b.c.d, attr3 = this.e.f.g;
+                int call() {
+                    Group a = new Group(i.j.k, obj1.obj2.obj3.value);
+                    int b = 19e1.b.c.d;
+                }
+            }
+        

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Rel),[MethodDecl(Id(call),Instance,[param(Id(f),ClassType(Id(bool)))],IntType,Block([],[For(Id(t),IntLit(1),IntLit(100),True,Return(BinaryOp(==,IntLit(2),IntLit(1)))])]))])])

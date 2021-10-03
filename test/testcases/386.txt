@@ -1,0 +1,8 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    return something;
+                }
+            }
+        

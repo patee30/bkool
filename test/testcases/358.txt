@@ -1,0 +1,6 @@
+
+            class Index {
+                static type hehe = a[1], hehe2 = a.b["string" + 1], hehe3 = a.b(11)[11 * 5e6 + a.b[1e5 + c.d[2]]];
+                string hehe4 = "haha"[10], hehe5 = {1,2,3}[2], hehe6 = false[7] + 1.e+9[8];
+            }
+        

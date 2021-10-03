@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[AttributeDecl(Instance,VarDecl(Id(temp),StringType)),MethodDecl(Id(call),Instance,[],IntType,Block([],[AssignStmt(ArrayCell(FieldAccess(FieldAccess(FieldAccess(Id(a),Id(b)),Id(c)),Id(d)),IntLit(4)),NewExpr(Id(MethodInvoc),[])),AssignStmt(ArrayCell(FieldAccess(CallExpr(Id(o),Id(p),[]),Id(q)),IntLit(5)),BinaryOp(^,Id(String),Id(Float)))]))])])

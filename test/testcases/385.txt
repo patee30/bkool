@@ -1,0 +1,14 @@
+
+            class Stmt {
+                int call() {
+                    var hehe;
+                    continue;
+                    if a then {
+                        continue;
+                        for b := c downto d do
+                            if e then continue;
+                    }
+                    continue;
+                }
+            }
+        

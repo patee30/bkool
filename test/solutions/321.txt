@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ExternalSort),[MethodDecl(Id(<init>),Instance,[param(Id(list1),ArrayType(100,ClassType(Id(List)))),param(Id(list2),ArrayType(100,ClassType(Id(List)))),param(Id(size1),IntType),param(Id(size2),IntType)],Block([],[]))])])

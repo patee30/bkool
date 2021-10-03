@@ -1,0 +1,9 @@
+
+            class Rel {
+                int main() {
+                    final string c = 523e09 <= 83923;
+                    if d >= 9 then
+                        return "sdfg" < {this};
+                }
+            }
+        

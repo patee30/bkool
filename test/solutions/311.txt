@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Subject),[AttributeDecl(Static,VarDecl(Id(id),IntType)),AttributeDecl(Static,VarDecl(Id(major),IntType)),AttributeDecl(Instance,VarDecl(Id(students),ArrayType(100,ClassType(Id(StudentId))),[FloatLit(0.0),StringLit("sth")]))])])

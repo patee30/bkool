@@ -1,0 +1,10 @@
+
+            class Arith {
+                int call() {
+                    hehe[10][10] tmp = 1 * 2e3 * 3 * 4;
+                    final string tmp2 = "1" / "2" / 3e5 / 4;
+                    bool[10] tmp3 = o.p.q \ false \ "True" \ {99};
+                    float tmp4 = 1001010 % 8123 % "haha" % nil;
+                }
+            }
+        

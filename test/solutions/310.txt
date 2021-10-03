@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Matrix),[AttributeDecl(Instance,VarDecl(Id(m1),ArrayType(1234,IntType))),AttributeDecl(Instance,VarDecl(Id(m2),ArrayType(1234,IntType))),AttributeDecl(Instance,VarDecl(Id(random),ArrayType(40,ArrayType(123,ArrayType(890,ArrayType(567,FloatType)))),[BooleanLit(True),IntLit(6),FloatLit(20000.0)]))])])

@@ -1,0 +1,6 @@
+
+            class Subject {
+                static int id, major;
+                StudentId[100] students = {5e-912, "sth"};
+            }
+        

@@ -1,0 +1,9 @@
+
+            class ConstClass {
+                int get() {
+                    final int g;
+                    final float pi = 3.1415926536, e = "2.7182818284";
+                    final bool sqrt2 = 001.41421, sqrt3 = new False(), sqrt4;
+                }
+            }
+        

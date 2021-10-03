@@ -1,0 +1,7 @@
+
+            class String {
+                int call() {
+                    String request = "Can I" ^ "fall" ^ "in" ^ love ^ "again?", response = Yes ^ "! ^_^\"";
+                }
+            }
+        

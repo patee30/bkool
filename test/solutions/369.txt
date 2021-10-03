@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[MethodDecl(Id(main),Instance,[],IntType,Block([],[AssignStmt(Id(s),BinaryOp(*,BinaryOp(*,Id(r),Id(r)),FieldAccess(Self(),Id(myPI)))),AssignStmt(ArrayCell(Id(a),IntLit(0)),Id(s)),Return(BinaryOp(^,Id(null),NullLiteral()))]))])])

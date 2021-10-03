@@ -1,0 +1,10 @@
+
+            class Files {
+                bool setPrivileges(int usercode) {
+                    bool user, group, admin;
+                    final FileTable tbl = new Table(usercode);
+                    int[200] _idx_lst, file_lst;
+                    final File[100] userfile = {"mybk", "drive"};
+                }
+            }
+        

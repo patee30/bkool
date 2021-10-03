@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[MethodDecl(Id(main),Instance,[],IntType,Block([VarDecl(Id(zero),ClassType(Id(bool))),VarDecl(Id(oclock),ClassType(Id(bool))),VarDecl(Id(minute),IntType,IntLit(60)),VarDecl(Id(hour),IntType,IntLit(12)),VarDecl(Id(sec),ArrayType(99,FloatType),NewExpr(Id(Boolean),[]))],[]))])])

@@ -1,0 +1,7 @@
+
+            class Arith {
+                int call() {
+                    int random = 1e4 * "haha" % hehe / 123e-456 \ false;
+                }
+            }
+        

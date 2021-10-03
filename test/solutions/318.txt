@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(AttrDeclAdvanced),[AttributeDecl(Instance,VarDecl(Id(size),IntType,IntLit(100))),AttributeDecl(Instance,VarDecl(Id(idx),IntType)),AttributeDecl(Instance,ConstDecl(Id(pivot),FloatType,FloatLit(6e-81))),AttributeDecl(Static,VarDecl(Id(flag1),ClassType(Id(bool)))),AttributeDecl(Static,VarDecl(Id(flag2),ClassType(Id(bool)),BooleanLit(True)))])])

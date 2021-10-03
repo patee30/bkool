@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Module),[MethodDecl(Id(nothing),Instance,[],ClassType(Id(Void)),Block([],[])),MethodDecl(Id(main),Instance,[param(Id(argc),IntType),param(Id(argv),ArrayType(100,ClassType(Id(char))))],IntType,Block([],[]))])])

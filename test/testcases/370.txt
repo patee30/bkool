@@ -1,0 +1,15 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    float num = 99, q = "fall", r;
+                    bool b, d = e.f.g;
+                    single_block[8] := hehe + d.e[3];
+                    if true then {
+                        a.b();
+                    }
+                    else
+                        a.c();
+                }
+            }
+        

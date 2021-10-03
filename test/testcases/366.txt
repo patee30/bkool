@@ -1,0 +1,7 @@
+
+            class Exp {
+                int main() {
+                    Any complex1 = !this.b(9 + 8e+6 <= 9 - {7} + 6 - "5") && false * !-+true + !--+-+"string" && new A((1 != !1..a) == "a[1]") || nil.hehe;
+                }
+            }
+        

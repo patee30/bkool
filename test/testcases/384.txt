@@ -1,0 +1,11 @@
+
+            class Stmt {
+                int call() {
+                    for Obj := top to b || exp1.a().b > c do
+                        if k ^ exp then
+                            continue;
+                    for var := exp1.a() downto trunc + 99--9  do
+                        continue;
+                }
+            }
+        

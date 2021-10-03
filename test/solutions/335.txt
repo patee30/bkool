@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(ConstString),[MethodDecl(Id(get),Instance,[],StringType,Block([ConstDecl(Id(val),StringType,IntLit(2021))],[]))])])

@@ -1,0 +1,5 @@
+
+            class String {
+                string temp = "hello" ^ "world";
+            }
+        

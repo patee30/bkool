@@ -1,0 +1,8 @@
+
+            class TestServer {
+                static string uri;
+                bool getRequest(string payload) {
+                    string method = "GET", content_length = String.len(payload), response;
+                }
+            }
+        

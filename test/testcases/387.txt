@@ -1,0 +1,8 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    return 1 + 2 * "5" / !77 \ 54.8 ^ !-+{"hehe"} ^ this.y[9] ^ new A(new B()) % +false - 8 + nil;
+                }
+            }
+        

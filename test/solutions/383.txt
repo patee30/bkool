@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[AttributeDecl(Instance,VarDecl(Id(temp),StringType)),MethodDecl(Id(call),Instance,[],IntType,Block([],[Break,Break,If(Id(True),Block([],[Break,If(BooleanLit(False),Break),For(Id(obj),NewExpr(Id(B),[]),NewExpr(Id(C),[]),False,Break]),Break])),Break]))])])

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Recursion),[AttributeDecl(Static,VarDecl(Id(val),StringType,StringLit("not init"))),AttributeDecl(Instance,ConstDecl(Id(lvl),IntType,IntLit(1))),AttributeDecl(Instance,ConstDecl(Id(numOfRecursion),IntType,None))])])

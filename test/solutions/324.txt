@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Job),[MethodDecl(Id(<init>),Instance,[param(Id(user_info),ClassType(Id(User))),param(Id(_compinfo),ClassType(Id(Company)))],Block([],[])),MethodDecl(Id(<init>),Instance,[],Block([],[]))])])

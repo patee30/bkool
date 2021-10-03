@@ -1,0 +1,4 @@
+
+            class InputStream extends Stream {
+            }
+        

@@ -1,0 +1,9 @@
+
+            class Stmt {
+                int main() {
+                    bool zero, oclock;
+                    int minute = 60, hour = 12;
+                    float[99] sec = new Boolean();
+                }
+            }
+        

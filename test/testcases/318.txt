@@ -1,0 +1,7 @@
+
+            class AttrDeclAdvanced {
+                int size = 100, idx;
+                final float pivot = 6e-81;
+                static bool flag1, flag2 = true;
+            }
+        

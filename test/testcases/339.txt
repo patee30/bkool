@@ -1,0 +1,13 @@
+
+            class MemLoc {
+                static final MemBlock[10100] block_list = nil;
+                init(int id) {
+                    final void name = "block\"0x00", pointer;
+                    bool status, written = true;
+                    Header[10] meta = new Pointer(id);
+                }
+                static getContent(Pointer p; bool canread, canwrite) {
+                    void var;
+                }
+            }
+        

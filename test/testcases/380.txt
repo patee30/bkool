@@ -1,0 +1,15 @@
+
+            class Stmt {
+                int call() {
+                    float[10][20] e, f, g, h, i, j;
+                    for i := 100 to !+-1 do
+                        var := none;
+                    d := 1;
+                    for something := !(1 == +-"9") downto ("false") do {
+                        DEF obj = a.b.c() + 88.050 ^ 7;
+                        if (x) then
+                            p.q();
+                    }
+                }
+            }
+        

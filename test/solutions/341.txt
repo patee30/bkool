@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Rel),[AttributeDecl(Static,VarDecl(Id(a),ClassType(Id(bool)),BinaryOp(>,IntLit(1),IntLit(2)))),AttributeDecl(Static,VarDecl(Id(b),ClassType(Id(bool)),BinaryOp(<,StringLit("something"),BooleanLit(False))))])])

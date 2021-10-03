@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Arith),[AttributeDecl(Instance,VarDecl(Id(add),ClassType(Id(opq)),BinaryOp(+,IntLit(1),IntLit(1)))),AttributeDecl(Instance,VarDecl(Id(sub),ClassType(Id(opq)),BinaryOp(-,[IntLit(192),[IntLit(88)]],StringLit("bruh"))))])])

@@ -1,0 +1,7 @@
+
+            class Someone {
+                string firstName = "Nguyen", middleName = "null", lastName;
+                string email = "example@mail.com";
+                string address = "001/01 Ly Thuong Kiet, Dict 10, Viet Nam";
+            }
+        

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(MixedVar),[MethodDecl(Id(getVal),Instance,[],FloatType,Block([VarDecl(Id(num1),IntType,IntLit(99)),VarDecl(Id(num2),IntType),ConstDecl(Id(char1),FloatType,FloatLit(8e-08)),ConstDecl(Id(char2),FloatType,Id(True)),VarDecl(Id(char3),StringType,Id(False)),VarDecl(Id(num3),StringType,Id(x))],[]))])])

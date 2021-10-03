@@ -1,0 +1,7 @@
+
+            class Bool {
+                int call() {
+                    final def a = 0.e+5 || {"a"} || false && "something";
+                }
+            }
+        

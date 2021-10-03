@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(AttrDeclAdvanced),[AttributeDecl(Static,ConstDecl(Id(name),ArrayType(400,StringType),None)),AttributeDecl(Static,ConstDecl(Id(address),ArrayType(400,StringType),None)),AttributeDecl(Instance,VarDecl(Id(comment),ArrayType(400,ArrayType(400,VoidType)))),AttributeDecl(Static,ConstDecl(Id(obj),ArrayType(400,ClassType(Id(Class))),NewExpr(Id(Class),[])))])])

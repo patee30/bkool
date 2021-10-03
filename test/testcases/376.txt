@@ -1,0 +1,14 @@
+
+            class Mixed {
+                string temp;
+                int call() {
+                    {
+                        a := b[1];
+                        {
+                            res[1] := "string" % {4, 5, 6e7} * 8 == false / tru543 \ 9;
+                        }
+                    }
+                    b.e().d := hehe;
+                }
+            }
+        

@@ -1,0 +1,17 @@
+
+            class Base {
+                final static string [1][2][3] text, tmp = false;
+                bool [9] func1() {}
+                C1 func3 (int param1, param2; bool param3; float param4; string[9] param5) {}
+            }
+            
+            class Derive1 extends Base {
+                concreteFunc1() {}
+                concreteFunc2() {}
+            }
+            
+            class Derive2 extends Derive1 {
+                void attr1, attr2 = None;
+            }
+            
+        

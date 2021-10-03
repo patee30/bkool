@@ -1,0 +1,19 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    if (a) then
+                        io.print("Hello \"world\"!\n");
+                    if b then
+                        if True || !-+true then
+                            g.h.i()[9] := 10;
+                        else
+                            a.b().c[1] := nil.e() - false;
+                    else
+                        if exp then
+                            doodoo.thing();
+                    x := y.z();
+                    return y.x();
+                }
+            }
+        

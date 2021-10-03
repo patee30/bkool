@@ -1,0 +1,7 @@
+
+            class Hello {
+                void hello() {
+                    string msg = "Hello world!\n";
+                }
+            }
+        

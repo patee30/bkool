@@ -1,0 +1,7 @@
+
+            class AttrDecl {
+                static final int age = 1;
+                final static string name = "John";
+                static final bool gender = true;
+            }
+        

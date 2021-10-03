@@ -1,0 +1,10 @@
+
+            class AttrAccess {
+                string attr = f.g().h, attr2 = a.b.c().d, attr3 = (nil.e().f()).g;
+                int call() {
+                    Group a = new Group((i.j[9 + "hehe"]).k, (false + 6e9 ^ {"obj"}).obj.value);
+                    int b = ({{19.1}}.b.c).d;
+                    float c = new D().e;
+                }
+            }
+        

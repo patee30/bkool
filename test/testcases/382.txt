@@ -1,0 +1,13 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    var hehe;
+                    for j := k / j \ o to {"17234", false} do
+                        break;
+                    for k := a[0] downto (a[10]).y(10) do
+                        if k ^ exp then
+                            break;
+                }
+            }
+        

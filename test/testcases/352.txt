@@ -1,0 +1,7 @@
+
+            class Arith {
+                int call() {
+                    nill[100] a = "haha" % fasle % 12346 % 7123e-3 / 1237 / asd \ "g" \ 812 \ "array" * 233 * true;
+                }
+            }
+        

@@ -1,0 +1,9 @@
+
+            class Car {
+                static string mode(int idx) {
+                    int maxIdx = 3, minIdx = 0, flag;
+                    string [3] mode = {"Stop", "Slow", "Normal", "Fast"};
+                    float vel = 0.e+0, fuel = 0100.;
+                }
+            }
+        

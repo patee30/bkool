@@ -1,0 +1,8 @@
+
+            class Stmt {
+                int main() {
+                    obj1.method1(0).static_attr := "integer" == obj2 + 76 > false \ hehe.hehe2[1] ^ new Sth2();
+                    (obj2.method2(1)[99]).instance_attr := !-simple && true || +false == obj3;
+                }
+            }
+        

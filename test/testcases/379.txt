@@ -1,0 +1,20 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    int a, c, b, d, e, f, g;
+                    if (a == b * c / g && "8\b.as\"")[9] then
+                        if c then
+                            if ((d)) then {
+                                x[00] := vanilla_python + false ^ "" ^ !nil;
+                                return -9e-09 ^ !+{"?" , "str"};
+                            }
+                            else {
+                                var x = 0;
+                                x := y.x();
+                            }
+                        else
+                            io.idle();
+                }
+            }
+        

@@ -1,0 +1,12 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    a.b(new B(), nil);
+                    c.d.e(88 ^ UwU || 0 == true);
+                    f.g.h.i(j.k.l(), 999 != 099e-9, {0});
+                    1..o(this);
+                    this.p(nil.q());
+                }
+            }
+        

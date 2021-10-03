@@ -1,0 +1,6 @@
+
+            class Sticker {
+                static Note writeNote (string[100] list) {}
+                bool deleteNote(int idx) {}
+            }
+        

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Heap),[AttributeDecl(Instance,ConstDecl(Id(maxheap),ArrayType(100,ClassType(Id(HeapElement))),[StringLit("a"),StringLit("b")])),AttributeDecl(Instance,ConstDecl(Id(minHeap),ArrayType(100,ClassType(Id(HeapElement))),None))])])

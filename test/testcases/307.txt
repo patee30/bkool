@@ -1,0 +1,5 @@
+
+            class Gravity {
+                float res, v = 10e+4, g = 9.800, h = 0100., s = 5.e7;
+            }
+        

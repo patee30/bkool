@@ -1,0 +1,17 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    break;
+                    break;
+                    if True then {
+                        break;
+                        if false then break;
+                        for obj:= new B() downto new C() do
+                            break;
+                        break;
+                    }
+                    break;
+                }
+            }
+        

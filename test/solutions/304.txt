@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(SingleLinkedList),Id(LL),[]),ClassDecl(Id(DoubleLinkedList),Id(LL),[])])

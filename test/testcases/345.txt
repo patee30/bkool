@@ -1,0 +1,6 @@
+
+            class Bool {
+                string temp = 1 && 2, temp2 = true || 6e7;
+                static bool x = "18" && False && true || b.d();
+            }
+        

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Rel),[MethodDecl(Id(main),Instance,[],IntType,Block([ConstDecl(Id(c),StringType,BinaryOp(<=,FloatLit(523000000000.0),IntLit(83923)))],[If(BinaryOp(>=,Id(d),IntLit(9)),Return(BinaryOp(<,StringLit("sdfg"),[Self()])))]))])])

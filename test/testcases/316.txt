@@ -1,0 +1,6 @@
+
+            class Recursion {
+                static string val = "not init";
+                final int lvl = 1, numOfRecursion;
+            }
+        

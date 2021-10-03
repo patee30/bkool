@@ -1,0 +1,11 @@
+
+            class Mixed {
+                string temp;
+                int call() {
+                    if a then b.c();
+                    if a then {b.c();}
+                    if c then for i := 0 downto 10 do for j:=11 to 1000e9 do io.print("\thi!");
+                    for k := 7 && 6 || 9 to {"hehe"} do if false then io.print("hello\n");
+                }
+            }
+        

@@ -1,0 +1,7 @@
+
+            class String {
+                static int len() {}
+                static string [100] split(string delimiter) {}
+                static something strip() {}
+            }
+        

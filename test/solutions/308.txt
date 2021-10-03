@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Triangle),[AttributeDecl(Instance,VarDecl(Id(isScalene),ClassType(Id(bool)),BooleanLit(False))),AttributeDecl(Instance,VarDecl(Id(isIsosceles),ClassType(Id(bool)))),AttributeDecl(Instance,VarDecl(Id(isEquilateral),ClassType(Id(bool))))])])

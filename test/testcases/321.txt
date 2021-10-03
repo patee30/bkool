@@ -1,0 +1,5 @@
+
+            class ExternalSort {
+                init (List[100] list1, list2; int size1, size2) {}
+            }
+        

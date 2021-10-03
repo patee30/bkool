@@ -1,0 +1,12 @@
+
+            class Mixed {
+                static method1() {{{}{{{{}{
+                    for i := 1 to 10 do {
+                        {}{{{}{}}}
+                        if a then
+                            {{}{}{{}}}
+                        else {{{{}}}{}{}}
+                    }
+                }{}}{}}{}}}}
+            }
+        

@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Stmt),[MethodDecl(Id(call),Instance,[],IntType,Block([],[For(Id(Obj),Id(top),BinaryOp(>,BinaryOp(||,Id(b),FieldAccess(CallExpr(Id(exp1),Id(a),[]),Id(b))),Id(c)),True,If(BinaryOp(^,Id(k),Id(exp)),Continue)]),For(Id(var),CallExpr(Id(exp1),Id(a),[]),BinaryOp(-,BinaryOp(+,Id(trunc),IntLit(99)),UnaryOp(-,IntLit(9))),False,Continue])]))])])

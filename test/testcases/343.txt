@@ -1,0 +1,6 @@
+
+            class Rel {
+                final sth temp = false == false;
+                bool temp2 = "1" != this;
+            }
+        

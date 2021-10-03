@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(AttrDecl),[AttributeDecl(Static,ConstDecl(Id(age),IntType,IntLit(1))),AttributeDecl(Static,ConstDecl(Id(name),StringType,StringLit("John"))),AttributeDecl(Static,ConstDecl(Id(gender),ClassType(Id(bool)),BooleanLit(True)))])])

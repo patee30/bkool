@@ -1,0 +1,6 @@
+
+            class Arith {
+                int[2] e = f * g, f = true \ a.b.c.d, mod = 7 % False;
+                float acc = 9330 * "hehe", acc2 = d.e.f[1] / acc2;
+            }
+        

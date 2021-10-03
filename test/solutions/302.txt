@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Spec1),[]),ClassDecl(Id(Spec2),[]),ClassDecl(Id(Spec3),[])])

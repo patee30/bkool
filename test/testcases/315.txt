@@ -1,0 +1,5 @@
+
+            class ConstNumber {
+                static float num = 234.e-6309, num2, num3;
+            }
+        

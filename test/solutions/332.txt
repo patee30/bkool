@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Hello),[MethodDecl(Id(hello),Instance,[],VoidType,Block([VarDecl(Id(msg),StringType,StringLit("Hello world!\n"))],[]))])])

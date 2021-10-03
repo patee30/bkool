@@ -1,0 +1,6 @@
+
+            class Job {
+                init (User user_info; Company _compinfo) {}
+                constructor() {}
+            }
+        

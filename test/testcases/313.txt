@@ -1,0 +1,6 @@
+
+            class VoidType {
+                void x = 1;
+                void[4] y = {"sth"};
+            }
+        

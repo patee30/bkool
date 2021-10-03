@@ -1,0 +1,9 @@
+
+            class Stmt {
+                string temp;
+                int call() {
+                    a.b.c.d[4] := new MethodInvoc();
+                    o.p().q[5] := String ^ Float;
+                }
+            }
+        

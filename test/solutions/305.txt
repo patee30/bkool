@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Sort),[]),ClassDecl(Id(QuickSort),Id(Sort),[]),ClassDecl(Id(MergeSort),Id(Sort),[])])

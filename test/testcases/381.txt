@@ -1,0 +1,17 @@
+
+            class Stmt {
+                int main() {
+                    bool temp;
+                    for _x_ := ((t.y().a != !7--9)) to exp do
+                        for y := 2 downto exp1 do {
+                            return 1;
+                        }
+                    for a := this downto nil do {
+                        float y = 9;
+                        for b := hull[9] to exp2 do
+                            return 2;
+                        return h.g();
+                    }
+                }
+            }
+        

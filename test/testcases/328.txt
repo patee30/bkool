@@ -1,0 +1,7 @@
+
+            class String {
+                int len() {}
+                string [100] split(string delimiter) {}
+                something strip() {}
+            }
+        

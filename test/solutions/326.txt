@@ -1,0 +1,1 @@
+Program([ClassDecl(Id(Job),[MethodDecl(Id(<init>),Instance,[],Block([],[])),MethodDecl(Id(<init>),Static,[param(Id(param1),IntType),param(Id(param2),IntType)],Block([],[]))])])
