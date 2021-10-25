@@ -1,1 +1,7 @@
-Program(List(FuncDecl(Id(main),List(),IntType,Block(List(),List(CallExpr(Id(putIntLn),List()))))))
+class main {
+            void a () {
+                int b;
+                int a = b + 5;
+            }
+        }
+        

@@ -13,6 +13,8 @@ from BKOOLLexer import BKOOLLexer
 from BKOOLParser import BKOOLParser
 from lexererr import *
 from ASTGeneration import ASTGeneration
+from StaticCheck import StaticChecker
+from StaticError import *
 
 """from StaticCheck import StaticChecker
 from StaticError import *
@@ -146,7 +148,7 @@ class TestAST:
         dest.close()
 
 
-"""
+
 class TestChecker:
     @staticmethod
     def test(input,expect,num):       
@@ -177,6 +179,7 @@ class TestChecker:
         finally:
             dest.close()
 
+"""
 class TestCodeGen():
     @staticmethod
     def test(input, expect, num):

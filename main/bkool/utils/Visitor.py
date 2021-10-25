@@ -110,6 +110,9 @@ class Visitor(ABC):
     @abstractmethod
     def visitSelfLiteral(self, ast, param):
         pass    
+    @abstractmethod
+    def visitArrayLiteral(self, ast, param):
+        pass 
 
 class BaseVisitor(Visitor):
       
@@ -219,5 +222,8 @@ class BaseVisitor(Visitor):
         return None
     
     def visitSelfLiteral(self, ast, param):
+        return None 
+
+    def visitArrayLiteral(self, ast, param):
         return None 
     

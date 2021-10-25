@@ -1,3 +1,4 @@
-int main () {
-            putIntLn(getInt(4));
+class main {
+            void a() {}
+            int a() {}
         }

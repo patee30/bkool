@@ -1,3 +1,2 @@
-
-            class sth {}
-        
+class main {}
+        class main {}
