@@ -1,1 +1,1 @@
-[None]
+Undeclared Class: A
