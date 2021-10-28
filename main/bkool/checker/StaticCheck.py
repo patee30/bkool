@@ -84,36 +84,29 @@ class GetEnv(BaseVisitor):
         # body: Block
         if ast.name.name in o:
             raise Redeclared(Method(), ast.name.name)
-        o[ast.name.name] = {}
+        o[ast.name.name] = [ast.kind, Symbol(ast.name.name, ast.returnType), None]
 
     def visitAttributeDecl(self, ast, o):
         # kind: SIKind #Instance or Static
         # decl: StoreDecl # VarDecl for mutable or ConstDecl for immutable
-        if type(ast.decl) is VarDecl:
-            if ast.decl.variable.name in o:
-                raise Redeclared(Attribute(), ast.decl.variable.name)
-            o[ast.decl.variable.name] = ast.decl.varType
+        decl = ast.decl
+        value = None
+        if type(decl) is VarDecl:
+            if decl.variable.name in o:
+                raise Redeclared(Attribute(), decl.variable.name)
+            if type(decl.varType) is ClassType:
+                # if not decl.varType.classname.name in o['global']:
+                #     raise Undeclared(Class(), decl.varType.classname.name)
+                value = 'objClass'
+            o[decl.variable.name] = [ast.kind, Symbol(decl.variable.name, decl.varType, value)]
         else:
-            if ast.decl.constant.name in o:
-                raise Redeclared(Attribute(), ast.decl.constant.name)
-            o[ast.decl.constant.name] = ast.decl.constType
-
-    def visitConstDecl(self, ast, o):
-        # constant : Id
-        # constType : Type
-        # value : Expr
-        if ast.constant.name in o:
-            raise Redeclared(Constant(), ast.constant.name)
-        o[ast.variable.name] = ast.constType
-
-    def visitVarDecl(self, ast, o):
-        # variable : Id
-        # varType : Type
-        # varInit : Expr = None # None if there is no initial
-        if ast.variable.name in o:
-            raise Redeclared(Variable(), ast.variable.name)
-        o[ast.variable.name] = ast.varType
-
+            if decl.constant.name in o:
+                raise Redeclared(Attribute(), decl.constant.name)
+            value = 'constant'
+            # if type(decl.constType) is ClassType:
+            #     if not decl.constType.classname.name in o['global']:
+            #         raise Undeclared(Class(), decl.constType.classname.name)
+            o[decl.constant.name] = [ast.kind, Symbol(decl.constant.name, decl.constType, value)]
 
 class StaticChecker(BaseVisitor):
 
@@ -162,49 +155,67 @@ class StaticChecker(BaseVisitor):
         env['global'] = o['global']
         env['current'] = o['current']
         env['local'] = {}
-        [self.visit(parameter, env['local']) for parameter in ast.param]
+        [self.visit(parameter, env) for parameter in ast.param]
         self.visit(ast.body, env)
 
     def visitAttributeDecl(self, ast, o):
         # kind: SIKind #Instance or Static
         # decl: StoreDecl # VarDecl for mutable or ConstDecl for immutable
-        if type(ast.decl) is VarDecl:
-            if type(ast.decl.varType) is ClassType:
-                if not ast.decl.varType.classname.name in o['global']:
-                    raise Undeclared(Class(), ast.decl.varType.classname.name)
-
-        else:
-            if type(ast.decl.constType) is ClassType:
-                if not ast.decl.varType.classname.name in o['global']:
-                    raise Undeclared(Class(), ast.decl.varType.classname.name)
-            if type(ast.decl.constType) is IntType:
-                if not self.visit(ast.decl.value, o).mtype is IntType: raise TypeMismatchInConstant(ast.decl)
-            elif type(ast.decl.constType) is FloatType:
-                if not self.visit(ast.decl.value, o).mtype in [IntType, FloatType]: raise TypeMismatchInConstant(ast.decl)
-            elif type(ast.decl.constDecl) is BoolType:
-                if not self.visit(ast.decl.value, o).mtype  is BoolType: raise TypeMismatchInConstant(ast.decl)
+        decl = ast.decl
+        if type(decl) is VarDecl:
+            if type(decl.varType) is ClassType:
+                if not decl.varType.classname.name in o['global']:
+                    raise Undeclared(Class(), decl.varType.classname.name)
+        if type(decl) is ConstDecl:
+            if type(decl.constType) is ClassType:
+                if not decl.constType.classname.name in o['global']:
+                    raise Undeclared(Class(), decl.constType.classname.name)
+            value_typ = self.visit(decl.value, o).mtype
+            if type(decl.constType) is IntType:
+                if type(value_typ) != IntType: raise TypeMismatchInConstant(decl)
+            elif type(decl.constType) is FloatType:
+                if not type(value_typ) in [IntType, FloatType]: raise TypeMismatchInConstant(decl)
+            elif type(decl.constType) is BoolType:
+                if type(value_typ) != BoolType: raise TypeMismatchInConstant(decl)
+            # o['global'][o['current']]['members'][ast.decl.constant.name] = [ast.kind, Symbol(decl.constant.name, typ, 'constant')]
 
     def visitConstDecl(self, ast, o):
         # constant : Id
         # constType : Type
         # value : Expr
-        if ast.constant.name in o:
+        if ast.constant.name in o['local']:
             raise Redeclared(Constant(), ast.constant.name)
-        o[ast.variable.name] = ast.constType
+        elif ast.constant.name in o['global'][o['current']]['members']:
+            raise Redeclared(Constant(), ast.constant.name)
+        if type(ast.constType) is ClassType:
+            if not ast.constType.classname.name in o['global']:
+                raise Undeclared(Class(), ast.constType.classname.name)
+        elif type(ast.constType) is IntType:
+            if type(self.visit(ast.value, o).mtype) != IntType:
+                raise TypeMismatchInConstant(ast)
+        elif type(ast.constType) is FloatType:
+            if not self.visit(ast.value, o).mtype in [IntType, FloatType]:
+                raise TypeMismatchInConstant(ast)
+        elif type(ast.constDecl) is BoolType:
+            if self.visit(ast.value, o).mtype != BoolType:
+                raise TypeMismatchInConstant(ast)
+        o['local'][ast.constant.name] = Symbol(ast.constant.name, ast.constType, 'constant')
 
     def visitVarDecl(self, ast, o):
         # variable : Id
         # varType : Type
         # varInit : Expr = None # None if there is no initial
-        if ast.variable.name in o:
+        if ast.variable.name in o['local']:
             raise Redeclared(Variable(), ast.variable.name)
-        o[ast.variable.name] = ast.varType
+        if type(ast.varType) is ClassType:
+            if not ast.varType.classname.name in o['global']:
+                raise Undeclared(Class(), ast.varType.classname.name)
+        o['local'][ast.variable.name] = Symbol(ast.variable.name, ast.varType)
 
     def visitBlock(self, ast, o):
         # decl:List[StoreDecl]
         # stmt:List[Stmt]
-        [self.visit(decl, o['local']) for decl in ast.decl]
-
+        [self.visit(decl, o) for decl in ast.decl]
         [self.visit(stmt, o) for stmt in ast.stmt]
 
     def visitBinaryOp(self, ast, o):
@@ -215,6 +226,8 @@ class StaticChecker(BaseVisitor):
         r = self.visit(ast.right, o)
         if l is None:
             raise Undeclared(Identifier(), ast.left.name)
+        if r is None:
+            raise Undeclared(Identifier(), ast.right.name)
         # Arithmetic
         if ast.op in ['+', '-', '*', '/', '\\', '%']:
             if not l.mtype and r.mtype in [IntType, FloatType]:
@@ -271,18 +284,61 @@ class StaticChecker(BaseVisitor):
         # lhs:Expr
         # exp:Expr
         lhs = self.visit(ast.lhs, o)
+        if lhs.value == 'constant': raise CannotAssignToConstant(ast)
+
         exp = self.visit(ast.exp, o)
-        if type(lhs) != type(exp.mtype):
+        if type(lhs.mtype) != type(exp.mtype):
             raise TypeMismatchInStatement(ast)
-    
+
+    def visitFieldAccess(self, ast, o):
+        # obj:Expr
+        # fieldname:Id
+        obj = self.visit(ast.obj, o)
+        typ = 'objClass'
+        obj_name = obj.mtype.classname if type(obj.mtype) == ClassType else obj.name
+        if type(obj.mtype) != ClassType:
+            raise TypeMismatchInExpression(ast)
+        
+   
+        if obj.value in ['objClass', 'class']:
+            ancestor = obj_name.name if type(obj_name) == Id else obj_name
+            while ancestor != None:
+                if ast.fieldname.name in o['global'][ancestor]['members']:                
+                    if obj.value == 'class':
+                        if o['global'][ancestor]['members'][ast.fieldname.name][0] == Instance():
+                            raise IllegalMemberAccess(ast)
+                    elif obj.value == 'objClass':
+                        if o['global'][ancestor]['members'][ast.fieldname.name][0] == Static():
+                            raise IllegalMemberAccess(ast)
+                    typ = o['global'][ancestor]['members'][ast.fieldname.name][1]
+                    return Symbol('', typ)
+                else: ancestor = o['global'][ancestor]['parent']
+
+            raise Undeclared(Identifier(), ast.fieldname.name)
+        else:
+            raise Undeclared(Class(), obj.name)
+        
+        
     def visitId(self, ast, o):
-        print(o['local'])
+        value = None
+        name = ast.name
         if ast.name in o['local']:
-            return o['local'][ast.name]
- 
+            if type(o['local'][ast.name].mtype) == ClassType:  
+                value = 'objClass'
+                name = o['local'][ast.name].mtype.classname.name
+            if o['local'][ast.name].value == 'constant':
+                value = 'constant'
+            return Symbol(name, o['local'][ast.name].mtype, value)
+
         if ast.name in o['global'][o['current']]['members']:
-            return o['global'][o['current']]['members'][ast.name]
-            
+            if o['global'][o['current']]['members'][ast.name][1].value == 'constant':
+                return  o['global'][o['current']]['members'][ast.name][1]
+            else:
+                return Symbol(o['current'], o['global'][o['current']]['members'][ast.name][1], 'memClass')
+ 
+        if ast.name in o['global']:
+            return Symbol(ast.name, ClassType(ast.name), 'class')
+
         raise Undeclared(Identifier(), ast.name)
 
     def visitIntLiteral(self, ast, o):
@@ -300,4 +356,5 @@ class StaticChecker(BaseVisitor):
     def visitNullLiteral(self, ast, o):
         pass
 
-    # def visitSelfLiteral(self, ast, param):
+    def visitSelfLiteral(self, ast, o):
+        return Symbol(o['current'], ClassType( o['current']), 'objClass')
